@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#section-3{
+    width: 100%;
+    background-color: green;
+}
+#three{
+    /* width: 90%; */
+    display: flex;
+    /* height: 90vh;  */
+    flex-direction: column; 
+    margin: auto;
+    height: 100vh;
+    border: 2px solid red;
+}
+.buttom{
+    width: 72%;
+    margin: auto;
+    height: fit-content;
+
+}
+.bottom-img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+.top{
+    width: 90% ;
+    color: white;
+    height: 30vh;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align:center;
+}
+.global{
+    font-size: 55px;
+    line-height: 2;
+}
+.para{
+font-size: 1rem;
+
+}

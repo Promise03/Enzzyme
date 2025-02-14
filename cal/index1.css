@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", serif;
+}
+
+/* header styling */
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#cancel-icon {
+  display: none;
+}
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+}
+
+.nav-link a:visited {
+  color: black;
+}
+
+.nav-link a:hover {
+  color: #00c853;
+  border-bottom: 1.5px solid #00c853;
+}
+
+#c-button {
+  background-color: rgb(4, 50, 3);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+
+#c-button:hover {
+  background-color: #00c853;
+}
+
+/* hero section */
+#hero-section {
+  width: 100%;
+  background-color: rgb(4, 50, 3);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#hero-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.left {
+  width: 58%;
+}
+
+.right {
+  width: 40%;
+}
+
+.right img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.left h2 {
+  color: white;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+#hero-para {
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+#hero-btns {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+#hero-btn1 {
+  background-color: white;
+  border-radius: 30px;
+  padding: 14px 22px;
+  border: none;
+}
+
+#hero-btn2 {
+  background-color: inherit;
+  color: white;
+  border-radius: 30px;
+  padding: 14px 22px;
+  border: 2px solid white;
+}
+
+.hero-btn:hover {
+  cursor: pointer;
+  background-color: #00c853 !important;
+  color: white;
+}
+
+/* section - Explore Portfolio */
+#section-two {
+  background-color: #e0ffdf;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#explore {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#explore-text p {
+  margin-top: 6px;
+}
+
+#explore-button {
+  background-color: rgb(4, 50, 3);
+  color: white;
+  border-radius: 30px;
+  padding: 12px 24px;
+  border: none;
+}
+
+/* explore 2 */
+#explore-2 {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.explore-2 {
+  width: 32%;
+  padding-bottom: 30px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+#explore-2-top {
+  width: 100%;
+  position: relative;
+}
+
+#e-icon1 {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  border: 6px solid #e0ffdf;
+  border-radius: 50%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+#e-icon2 {
+  position: absolute;
+  right: 0px;
+  width: 90px;
+}
+
+#explore-2-bottom {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10px;
+  padding-right: 2px;
+}
+
+.e-p1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(4, 50, 3);
+}
+
+.e-p2 {
+  font-size: 10px;
+}
+
+/* responsive design starts here */
+@media (max-width: 800px) {
+  #menu-icon,
+  #cancel-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #cancel-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: lighter;
+  }
+
+  nav {
+    background-color: white;
+    width: 85%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+  }
+
+  #nav-ul {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-container {
+    width: 90%;
+    flex-flow: column nowrap;
+    gap: 50px;
+    /* border: 1px solid red; */
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .right {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* explore 2 */
+  #explore-2 {
+    flex-flow: column wrap;
+    gap: 20px;
+  }
+
+  .explore-2 {
+    width: 100%;
+  }
+
+  .e-p1 {
+    font-size: 26px;
+  }
+
+  .e-p2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  #explore {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  #hero-btns {
+    gap: 12px;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 200px) {
+  .left h2 {
+    color: white;
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
