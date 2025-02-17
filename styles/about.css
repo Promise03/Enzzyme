@@ -4,6 +4,61 @@
 }
 
 
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+  
+  #menu-icon {
+    display: none;
+  }
+  
+  #cancel-icon {
+    display: none;
+  }
+  
+  #nav-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+  }
+  
+  .nav-link a:visited {
+    color: black;
+  }
+  
+  .nav-link a:hover {
+    color: #00c853;
+    border-bottom: 1.5px solid #00c853;
+  }
+  
+  #c-button {
+    background-color: rgb(4, 50, 3);
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 30px;
+  }
+  
+  #c-button:hover {
+    background-color: #00c853;
+  }
+  
+
+
 
 #section-3{
     width: 100%;
@@ -15,8 +70,9 @@
     /* height: 90vh;  */
     flex-direction: column; 
     margin: auto;
+    padding-top: 60px;
     height: 100vh;
-    border: 2px solid red;
+
 }
 .buttom{
     width: 72%;
@@ -34,7 +90,6 @@
     color: white;
     height: 30vh;
     margin: auto;
-    padding-bottom: 20px;
     text-align:center;
 }
 .global{
@@ -45,3 +100,142 @@
 font-size: 1rem;
 
 }
+#section-two{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+#our{
+    width: 90%;
+    gap: 40px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* border: 2px solid red; */
+    margin: auto;
+    
+    display: flex;
+}
+.right{
+    /* border: 2px solid blue; */
+    padding-top: 30px;
+    align-items: left;
+
+}
+.h1{
+    font-size: 40px;
+    gap: 4;
+    padding-top: 30px;
+}
+.p{
+    font-size: 23px;
+}
+#section-one{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    background-image: url(../asset/images/aboutGroup..svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220vh;
+}
+#aboutus{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4, 50, 3);
+    color: white;
+    opacity: 0.8;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#about-text{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+.sech1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.secp{
+    font-size: 20px;
+    text-align: center;
+}
+#secbutton{
+    margin: auto;
+    gap: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    justify-content: center;
+    
+
+
+}
+#about-button {
+    background-color: white;
+    border: 2px solid ;
+    color: rgb(4, 50, 3);
+    padding: 10px 45px;
+    border-radius: 30px;
+    
+  }
+  
+  #about-button:hover {
+    background-color: #00c853;
+  }
+
+  #contact-button {
+    background-color: rgb(4, 50, 3);
+    border: 2px solid white ;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    
+  }
+  
+  #contact-button:hover {
+    background-color: #00c853;
+  }
+
+  @media (max-width: 800px) {
+    #menu-icon,
+    #cancel-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #cancel-icon {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-weight: lighter;
+    }
+  
+    nav {
+      background-color: white;
+      width: 85%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 70px;
+      margin: auto;
+      border-radius: 15px;
+      padding: 20px;
+      display: none;
+    }
+  
+    #nav-ul {
+      gap: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
