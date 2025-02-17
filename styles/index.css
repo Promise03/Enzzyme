@@ -429,28 +429,7 @@ footer{
   color: white;
 
 }
-/* .last-p{
-  
-  
-  height: 300px;
-  padding: 0;
 
-
-} */
-
-/* .last-p1{
-  width: 9%;
-  margin: auto;
-  height: 300px;
-  gap: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid blue;
-  padding: 0;
-  
-  
-
-} */
 
 .last-p{
   flex: 1;
@@ -517,7 +496,134 @@ footer{
   .right {
     width: 100%;
   }
-}
+  
+  #investment{
+    flex-flow: column wrap;
+    
+  }
+  
+  .left-invest{
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding-top: 100px;
+    color: white;
+    
+  }
+  .left-text1{
+    font-size: 30px;
+    font-weight: bold;
+    
+    line-height: 2;
+  }
+  
+  .left-text2{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
+  .right-invest{
+    width: 100%;
+  }
+  
+  #section-five{
+    width: 100%;
+    background-color: #e0ffdf;
+    margin: auto;
+  cursor: pointer;
+  }
+  .left-mission{
+    width: 100%;
+    
+    position: relative;
+  
+  }
+  .right-mission{
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+  
+  
+  
+  #mission{
+    flex-flow: column wrap;
+    
+    
+  }
+
+
+  footer{
+    width: 100%;
+    background-color: rgb(4, 50, 3);
+  }
+  #last-p{
+    width: 100%;
+    
+    display: flex;
+    flex-flow: column wrap;
+  
+    color:black;
+  
+  }
+  
+  
+  
+  }
+  
+  #sign{
+    width: 90%;
+    display: flex;
+  
+    flex-flow: column wrap;
+    
+  
+  }
+  .right-sign{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 30px;
+    
+    
+  }
+  
+  
+  
+  .left-sign{
+    color: white;
+    position: relative;
+    width: 100%;
+    
+   
+  }
+  
+  .sign-h1{
+    font-size: 27px;
+    line-height: 1.5;
+  
+  }
+  
+  .sign-p{
+    font-size: 16px;
+    
+  }
+  
+  
+  .last-p{
+  
+    width: 100%;
+  }
+  
+  
+  
+  .last-p1{
+  
+    width: 100%;
+  }
+  
+
 
 @media (max-width: 750px) {
   .right {

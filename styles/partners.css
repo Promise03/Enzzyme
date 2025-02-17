@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#cancel-icon {
+  display: none;
+}
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+}
+
+.nav-link a:visited {
+  color: black;
+}
+
+.nav-link a:hover {
+  color: #00c853;
+  border-bottom: 1.5px solid #00c853;
+}
+
+#c-button {
+  background-color: rgb(4, 50, 3);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+
+#c-button:hover {
+  background-color: #00c853;
+}
+
+#section-one{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    background-image: url(../asset/images/aboutGroup..svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220vh;
+}
+#aboutus{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4, 50, 3);
+    color: white;
+    opacity: 0.8;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#about-text{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+.sech1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+}
+.secp{
+    font-size: 20px;
+    text-align: center;
+}
+#secbutton{
+    margin: auto;
+    gap: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    justify-content: center;
+    
+
+
+}
+#about-button {
+    background-color: white;
+    border: 2px solid ;
+    color: rgb(4, 50, 3);
+    padding: 10px 45px;
+    border-radius: 30px;
+    
+  }
+  
+  #about-button:hover {
+    background-color: #00c853;
+  }
+
+  #contact-button {
+    background-color: rgb(4, 50, 3);
+    border: 2px solid white ;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    
+  }
+  
+  #contact-button:hover {
+    background-color: #00c853;
+  }
+  #Partner-img1{
+    width: 100%;
+    margin: auto;
+    
+    /* display: flex;
+    justify-content: space-;
+    flex-flow: column nowrap; */
+  }
+
+  #Partner-img{
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+  .ph1{
+    font-size: 40px;
+    line-height: 2;
+    
+  }
+  .parap{
+    color: rgb(81, 79, 79);
+    font-size: 20px;
+    padding-bottom: 60px;
+    line-height: 1.5;
+  }
+
+  .partnersh{
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    padding: 50px;
+  }
+  .Partner-img{
+    width: 45%;
+  }
+  @media (max-width: 800px) {
+    #menu-icon,
+    #cancel-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #cancel-icon {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-weight: lighter;
+    }
+  
+    nav {
+      background-color: white;
+      width: 85%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 70px;
+      margin: auto;
+      border-radius: 15px;
+      padding: 20px;
+      display: none;
+    }
+  
+    #nav-ul {
+      gap: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #section-one{
+        
+        height: auto;
+        
+    }
+    #aboutus{
+       
+        height: auto;
+        
+        
+    
+    }
+    #about-text{
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+    }
+    .sech1{
+        font-size: 30px;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .secp{
+        font-size: 16px;
+        text-align: left;
+    }
+    #secbutton{
+       
+        gap: 10px;
+      
+        display: flex;
+        flex-flow: column;
+       
+        
+    
+    
+    }
+    
+      #Partner-img1{
+        width: 90%;
+        margin: auto;
+      }
+    
+      #Partner-img{
+    
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+      .partners-img{
+        width: 100%;
+      }
+    
+        
+      
+      
+      .Partner-img{
+        width: 90%;
+      }
+      .partnersh{
+        width: 90%;
+    
+        padding: 10px;
+      }
+}
