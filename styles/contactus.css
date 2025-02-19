@@ -144,6 +144,64 @@ textarea{
     background-color: #00c853;
   }
 
+  footer{
+    width: 100%; 
+    background-color: rgb(4, 50, 3);
+    color: white;
+  
+  } 
+   #last-p{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-bottom: 45px;
+    color: white;
+  
+  }
+  
+  
+  .last-p{
+    width: 20%;
+    
+  }
+  
+  .last-p1{
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  #last-ul{
+    list-style-type: none;
+    line-height: 2.5;
+  } 
+  
+  .last-text1{
+    font-size: 1.3em;
+   
+    font-weight: bold;
+  }
+  
+  .copywrite{
+    text-align: center;
+    color: rgb(161, 157, 157);
+    font-size: 1.2em;
+  }
+  .last-textp{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .footer-link{
+    text-decoration: none;
+    color: white;
+  } 
+  
+  
+
+
   @media (max-width: 800px) {
     #menu-icon,
     #cancel-icon {
@@ -176,6 +234,43 @@ textarea{
       flex-direction: column;
       text-align: center;
     }
+
+    footer{
+      width: 100%;
+      background-color: rgb(4, 50, 3);
+    }
+  
+    .last-p{
+      width: 90%;
+      display: flex;
+      gap: 20px; 
+      flex-flow: column nowrap;
+      }
+    #last-p{
+  
+      width: 90%;
+  
+      display: flex;
+      flex-flow: column wrap;
+      
+    }
+
+    .last-p1{
+  
+      width: 90%;
+  
+      display: flex;
+      flex-flow: column wrap;
+  
+    }
+
+    #sectwo{
+      width: 90%;
+      display: flex;
+      flex-flow: column nowrap;
+     
+  }
+
 }
 /* img{
     
