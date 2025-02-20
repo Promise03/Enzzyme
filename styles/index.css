@@ -31,6 +31,7 @@ header {
   display: none;
 }
 
+
 #nav-ul {
   display: flex;
   list-style-type: none;
@@ -364,26 +365,28 @@ a .right-mission{
   width: 90%;
   display: flex;
   margin: auto;
-  flex-flow: row wrap;
+  flex-direction: row nowrap;
   position: relative;
+
   padding-top: 80px;
   padding-bottom: 80px;
   justify-content: space-between;
 
 }
 .right-sign{
-  width: 39%;
+   width: 50%; 
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   position: relative;
-  margin: auto;
-  gap: 10px;
+  
+
+  gap: 30px;
   
 }
 
 #sign-form{
-  padding: 10px;
-  padding-right: 40px;
+  padding: 10px 50px;
+
   border-radius: 10px;
 }
 
@@ -414,44 +417,65 @@ a .right-mission{
   font-size: 20px;
 }
 footer{
-  width: 100%;
+  width: 100%; 
   background-color: rgb(4, 50, 3);
-}
-#last-p{
+  color: white;
+
+} 
+ #last-p{
   width: 90%;
   margin: auto;
-  padding: 40px;
-  /* padding-top: 40px; */
+  padding-top: 40px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   flex-flow: row nowrap;
-  /* padding-bottom: 100px; */
+  padding-bottom: 45px;
   color: white;
 
 }
 
 
 .last-p{
-  flex: 1;
-  padding: 20px;
-  width: 18%;
-}
-
-.last-text1{
-  font-size: 22px;
-  font-weight: bold;
+  width: 20%;
+  
 }
 
 .last-p1{
-  flex: 1;
-  padding: 20px;
-  width: 9%;
+display: flex;
+justify-content: space-between;
 }
 
-  /* width: 30%; */
+#last-ul{
+  list-style-type: none;
+  line-height: 2.5;
+} 
+
+.last-text1{
+  font-size: 1.3em;
+ 
+  font-weight: bold;
+}
+
+.copywrite{
+  text-align: center;
+  color: rgb(161, 157, 157);
+  font-size: 1.2em;
+}
+.last-textp{
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-link{
+  text-decoration: none;
+  color: white;
+} 
+
+
 
 
 /* responsive design starts here */
+
 @media (max-width: 800px) {
   #menu-icon,
   #cancel-icon {
@@ -550,7 +574,7 @@ footer{
   #mission{
     flex-flow: column wrap;
     
-    
+ 
   }
 
 
@@ -558,32 +582,33 @@ footer{
     width: 100%;
     background-color: rgb(4, 50, 3);
   }
+
+  .last-p{
+    width: 12%;
+    display: flex;
+    gap: 20px; 
+    flex-flow: column nowrap;
+    }
   #last-p{
+
     width: 100%;
-    
+
     display: flex;
     flex-flow: column wrap;
-  
-    color:black;
-  
-  }
-  
-  
-  
+
   }
   
   #sign{
     width: 90%;
     display: flex;
-  
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     
   
   }
   .right-sign{
-    width: 100%;
+    width: 90%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
     padding: 30px;
     
     
@@ -621,8 +646,17 @@ footer{
   .last-p1{
   
     width: 100%;
+    display: flex;
+    flex-flow: column;
   }
   
+  
+  }
+  
+  
+  
+  
+
 
 
 @media (max-width: 750px) {

@@ -107,23 +107,36 @@ font-size: 1rem;
 }
 #our{
     width: 90%;
-    gap: 40px;
+    
 
     padding-top: 40px;
     padding-bottom: 40px;
-    /* border: 2px solid red; */
-    margin: auto;
     
+    margin: auto;
+    gap: 50px;
+    flex-flow: row nowrap;
     display: flex;
 }
 .right{
-    /* border: 2px solid blue; */
-    padding-top: 30px;
-    align-items: left;
+  
+    width: 45%;
+    /* padding-top: 30px; */
+  
 
 }
+.left{
+  width: 45%;
+
+  object-fit: fill;
+  
+ 
+
+}
+.left img{
+  width: 100%;
+}
 .h1{
-    font-size: 40px;
+    font-size: 42px;
     gap: 4;
     padding-top: 30px;
 }
@@ -205,6 +218,62 @@ font-size: 1rem;
     background-color: #00c853;
   }
 
+  footer{
+    width: 100%; 
+    background-color: rgb(4, 50, 3);
+    color: white;
+  
+  } 
+  #last-p{
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding-bottom: 45px;
+    color: white;
+  
+  }
+  
+  
+  
+  .last-p{
+    width: 20%;
+    
+  }
+  
+  .last-p1{
+  display: flex;
+  justify-content: space-between;
+  }
+  #last-ul{
+    list-style-type: none;
+    line-height: 2.5;
+  } 
+  
+  .last-text1{
+    font-size: 1.3em;
+   
+    font-weight: bold;
+  }
+  
+  .copywrite{
+    text-align: center;
+    color: rgb(161, 157, 157);
+    font-size: 1.2em;
+  }
+  .last-textp{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .footer-link{
+    text-decoration: none;
+    color: white;
+  } 
+  
+
   @media (max-width: 800px) {
     #menu-icon,
     #cancel-icon {
@@ -237,5 +306,69 @@ font-size: 1rem;
       flex-direction: column;
       text-align: center;
     }
+    footer{
+      width: 100%;
+      background-color: rgb(4, 50, 3);
+    }
+  
+    #last-p{
+      width: 90%;
+      margin: auto;
+      padding-top: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-flow: column nowrap;
+      padding-bottom: 45px;
+      color: white;
+    
+    }
+    
+    
+    .last-p{
+      width: 90%;
+      
+    }
+    
+    .last-p1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    }
+    
+
+    #secbutton{
+      
+      gap: 30px;
+      padding-top: 20px;
+      display: flex;
+      flex-flow: column wrap;
+      text-align: left;
+      justify-content: left;
+      
+  
+  
   }
+  #our{
+    width: 90%;
+    flex-flow: column;
+    display: flex;
+}
+  
+.right{
+  
+  padding-top: 30px;
+  align-items: left;
+
+  }
+  .left{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .right{
+    
+    width: 100%;
+  }
+}
   
