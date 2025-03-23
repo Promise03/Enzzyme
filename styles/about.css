@@ -1,62 +1,72 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", serif;
 }
 
 
+
 header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: relative;
-  }
-  
-  #menu-icon {
-    display: none;
-  }
-  
-  #cancel-icon {
-    display: none;
-  }
-  
-  #nav-ul {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-  }
-  
-  .nav-link a {
-    text-decoration: none;
-    font-size: 11px;
-    color: black;
-  }
-  
-  .nav-link a:visited {
-    color: black;
-  }
-  
-  .nav-link a:hover {
-    color: #00c853;
-    border-bottom: 1.5px solid #00c853;
-  }
-  
-  #c-button {
-    background-color: rgb(4, 50, 3);
-    border: none;
-    color: white;
-    padding: 7px 14px;
-    border-radius: 30px;
-  }
-  
-  #c-button:hover {
-    background-color: #00c853;
-  }
-  
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  gap: 50%;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#cancel-icon {
+  display: none;
+}
+
+
+#nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+}
+
+.nav-link a:visited {
+  color: black;
+}
+
+.nav-link a:hover {
+  color: #00c853;
+  border-bottom: 1.5px solid #00c853;
+}
+
+#c-button {
+  background-color: rgb(4, 50, 3);
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 30px;
+}
+
+#c-button:hover {
+  background-color: #00c853;
+}
+
 
 
 
@@ -65,7 +75,7 @@ header {
     background-color: green;
 }
 #three{
-    /* width: 90%; */
+    width: 90%;
     display: flex;
     /* height: 90vh;  */
     flex-direction: column; 
@@ -147,18 +157,21 @@ font-size: 1rem;
     width: 100%;
     padding: auto;
     margin: auto;
-    background-image: url(../asset/images/aboutGroup..svg);
+    margin-top: 1.5%;
+    background-image: url(../asset/images/header-background.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 220vh;
+    /* position: relative; */
+    /* background-size: 200vh; */
 }
 #aboutus{
     width: 100%;
     height: 100vh;
-    background-color: rgb(4, 50, 3);
+    
     color: white;
-    opacity: 0.8;
+    margin-top: 6%;
+   /* padding: 10px; */
     margin: auto;
     justify-content: space-between;
     display: flex;
@@ -272,7 +285,189 @@ font-size: 1rem;
     text-decoration: none;
     color: white;
   } 
+
   
+  @media (max-width: 1100px){
+    #three{
+      width: 90%;
+      display: flex;
+      /* height: 90vh;  */
+      flex-direction: column; 
+      margin: auto;
+      padding-top: 30px;
+      gap: 50px;
+
+      height: 100vh;
+  
+  }
+  .buttom{
+      width: 50%;
+      margin: auto;
+      height: fit-content;
+  
+  }
+  } 
+
+  @media (max-width: 1000px){
+    #three{
+      width: 90%;
+      display: flex;
+      /* height: 90vh;  */
+      flex-direction: column; 
+      margin: auto;
+      padding-top: 30px;
+      gap: 50px;
+
+      height: 100vh;
+  
+  }
+  .buttom{
+      width: 60%;
+      margin: auto;
+      height: fit-content;
+  
+  }
+  } 
+
+  @media (max-width: 950px){
+    #three{
+      width: 90%;
+      display: flex;
+      /* height: 90vh;  */
+      flex-direction: column; 
+      margin: auto;
+      padding-top: 30px;
+      gap: 50px;
+
+      height: 100vh;
+  
+  }
+  .buttom{
+      width: 60%;
+      margin: auto;
+      height: fit-content;
+  
+  }
+  } 
+  
+  @media (max-width: 900px) {
+    #menu-icon,
+    #cancel-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #cancel-icon {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-weight: lighter;
+    }
+  
+    nav {
+      background-color: white;
+      width: 85%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 70px;
+      margin: auto;
+      border-radius: 15px;
+      padding: 20px;
+      display: none;
+    }
+  
+    #nav-ul {
+      gap: 30px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #three{
+      width: 90%;
+      display: flex;
+      /* height: 90vh;  */
+      flex-direction: column; 
+      margin: auto;
+      padding-top: 30px;
+      gap: 50px;
+
+      height: 100vh;
+  
+  }
+  .buttom{
+      width: 60%;
+      margin: auto;
+      height: fit-content;
+  
+  }
+  
+
+    footer{
+      width: 100%;
+      background-color: rgb(4, 50, 3);
+    }
+  
+    #last-p{
+      width: 90%;
+      margin: auto;
+      padding-top: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-flow: column nowrap;
+      padding-bottom: 45px;
+      color: white;
+    
+    }
+    
+    
+    .last-p{
+      width: 90%;
+      
+    }
+    
+    .last-p1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    }
+    
+
+    #secbutton{
+      
+      gap: 30px;
+      padding-top: 20px;
+      display: flex;
+      flex-flow: column wrap;
+      text-align: left;
+      justify-content: left;
+      
+  
+  
+  }
+  #our{
+    width: 90%;
+    flex-flow: column;
+    display: flex;
+}
+  
+.right{
+  
+  padding-top: 30px;
+  align-items: left;
+
+  }
+  .left{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .right{
+    
+    width: 100%;
+  }
+}
 
   @media (max-width: 800px) {
     #menu-icon,
