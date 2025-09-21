@@ -14,13 +14,14 @@ body {
 header {
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  gap: 50%;
   padding-top: 15px;
   padding-bottom: 15px;
-  position: relative;
+  position: fixed;
 }
 
 #menu-icon {
@@ -52,7 +53,31 @@ header {
   color: #00c853;
   border-bottom: 1.5px solid #00c853;
 }
-
+.dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  min-width: 150px;
+}
+.dropdown-menu li{
+  padding: 10px;
+}
+.dropdown-menu li a:hover{
+  background-color: white;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 #c-button {
   background-color: rgb(4, 50, 3);
   border: none;
@@ -69,7 +94,7 @@ header {
 #hero-section {
   width: 100%;
   background-color: rgb(4, 50, 3);
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -415,6 +440,8 @@ a .right-mission{
 
 .sign-p{
   font-size: 20px;
+  font-weight: 500;
+  /* display: none; */
 }
 footer{
   width: 100%; 
@@ -476,7 +503,7 @@ justify-content: space-between;
 
 /* responsive design starts here */
 
-@media (max-width: 800px) {
+@media (max-width: 900px ) {
   #menu-icon,
   #cancel-icon {
     display: block;
@@ -492,11 +519,11 @@ justify-content: space-between;
 
   nav {
     background-color: white;
-    width: 85%;
+    width: 90%;
     position: absolute;
     right: 0;
     left: 0;
-    top: 70px;
+    top: 170px;
     margin: auto;
     border-radius: 15px;
     padding: 20px;
@@ -514,6 +541,14 @@ justify-content: space-between;
     flex-flow: column nowrap;
     gap: 50px;
     /* border: 1px solid red; */
+  }
+
+  #hero-btns {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    /* margin-top: 20px; */
+    gap: 10px;
   }
 
   .left,
@@ -591,7 +626,7 @@ justify-content: space-between;
     }
   #last-p{
 
-    width: 100%;
+    width: 90%;
 
     display: flex;
     flex-flow: column wrap;
@@ -652,6 +687,379 @@ justify-content: space-between;
   
   
   }
+
+@media (max-width: 850px ) {
+  #menu-icon,
+  #cancel-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #cancel-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: lighter;
+  }
+
+  nav {
+    background-color: white;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 170px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+  }
+
+  #nav-ul {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-container {
+    width: 90%;
+    flex-flow: column nowrap;
+    gap: 50px;
+    /* border: 1px solid red; */
+  }
+
+  #hero-btns {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    /* margin-top: 20px; */
+    gap: 10px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+  
+  #investment{
+    flex-flow: column wrap;
+    
+  }
+  
+  .left-invest{
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding-top: 100px;
+    color: white;
+    
+  }
+  .left-text1{
+    font-size: 30px;
+    font-weight: bold;
+    
+    line-height: 2;
+  }
+  
+  .left-text2{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
+  .right-invest{
+    width: 100%;
+  }
+  
+  #section-five{
+    width: 100%;
+    background-color: #e0ffdf;
+    margin: auto;
+  cursor: pointer;
+  }
+  .left-mission{
+    width: 100%;
+    
+    position: relative;
+  
+  }
+  .right-mission{
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+  
+  
+  
+  #mission{
+    flex-flow: column wrap;
+    
+ 
+  }
+
+
+  footer{
+    width: 100%;
+    background-color: rgb(4, 50, 3);
+  }
+
+  .last-p{
+    width: 12%;
+    display: flex;
+    gap: 20px; 
+    flex-flow: column nowrap;
+    }
+  #last-p{
+
+    width: 90%;
+
+    display: flex;
+    flex-flow: column wrap;
+
+  }
+  
+  #sign{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+  
+  }
+  .right-sign{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 30px;
+    
+    
+  }
+  
+  
+  
+  .left-sign{
+    color: white;
+    position: relative;
+    width: 100%;
+    
+   
+  }
+  
+  .sign-h1{
+    font-size: 27px;
+    line-height: 1.5;
+  
+  }
+  
+  .sign-p{
+    font-size: 16px;
+    
+  }
+  
+  
+  .last-p{
+  
+    width: 100%;
+  }
+  
+  
+  
+  .last-p1{
+  
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  
+  }
+
+
+@media (max-width: 800px ) {
+  #menu-icon,
+  #cancel-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #cancel-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-weight: lighter;
+  }
+
+  nav {
+    background-color: white;
+    width: 90%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 170px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+  }
+
+  #nav-ul {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-container {
+    width: 90%;
+    flex-flow: column nowrap;
+    gap: 50px;
+    /* border: 1px solid red; */
+  }
+
+  #hero-btns {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    /* margin-top: 20px; */
+    gap: 10px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+  
+  #investment{
+    flex-flow: column wrap;
+    
+  }
+  
+  .left-invest{
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding-top: 100px;
+    color: white;
+    
+  }
+  .left-text1{
+    font-size: 30px;
+    font-weight: bold;
+    
+    line-height: 2;
+  }
+  
+  .left-text2{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  
+  .right-invest{
+    width: 100%;
+  }
+  
+  #section-five{
+    width: 100%;
+    background-color: #e0ffdf;
+    margin: auto;
+  cursor: pointer;
+  }
+  .left-mission{
+    width: 100%;
+    
+    position: relative;
+  
+  }
+  .right-mission{
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+  
+  
+  
+  #mission{
+    flex-flow: column wrap;
+    
+ 
+  }
+
+
+  footer{
+    width: 100%;
+    background-color: rgb(4, 50, 3);
+  }
+
+  .last-p{
+    width: 12%;
+    display: flex;
+    gap: 20px; 
+    flex-flow: column nowrap;
+    }
+  #last-p{
+
+    width: 90%;
+
+    display: flex;
+    flex-flow: column wrap;
+
+  }
+  
+  #sign{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    
+  
+  }
+  .right-sign{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 30px;
+    
+    
+  }
+  
+  
+  
+  .left-sign{
+    color: white;
+    position: relative;
+    width: 100%;
+    
+   
+  }
+  
+  .sign-h1{
+    font-size: 27px;
+    line-height: 1.5;
+  
+  }
+  
+  .sign-p{
+    font-size: 16px;
+    
+  }
+  
+  
+  .last-p{
+  
+    width: 100%;
+  }
+  
+  
+  
+  .last-p1{
+  
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  
+  }
+
+  
   
   
   
